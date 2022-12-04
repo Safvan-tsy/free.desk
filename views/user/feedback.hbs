@@ -1,0 +1,50 @@
+<section class="vh-130 pt-2" style="background-color: rgba(238, 238, 238, 0.845);">
+  <div class=" h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black mt-4 mb-4" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <form action="/submit" method="post">
+                <div class="row">
+                  <div class="col-md-10 col-lg-6 col-xl-5 order-1 order-lg-1">
+                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Let us know !</p>
+                    <input type="text" name="name" class="form-control">
+                    <label class="form-label">Your Name</label>
+
+                    <input type="email" name="email" class="form-control mt-3 ">
+                    <label class="form-label">Your Email</label>
+
+                    <input type="text" name="subject" class="form-control mt-3 ">
+                    <label class="form-label mb-3">Subject</label>
+                  </div>
+
+
+                  <div class="col-md-10 col-lg-6 col-xl-7  mt-4 order-2 order-lg-2">
+
+                    <a class="btn btn-outline-danger float-end mb-5" href="/logout" role="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-square-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z" />
+                      </svg>
+                      Exit</a>
+                    <textarea class="form-control mt-4" placeholder="leave your complaint here.." id="floatingTextarea2"
+                      name="complaint" style="height: 15rem">
+                    </textarea>
+                    <label for="">leave your complaint here..</label>
+
+                    <div class=" mx-4 mb-2 mb-lg-4 mt-3">
+                      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
