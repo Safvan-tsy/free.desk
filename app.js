@@ -26,6 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({ secret: "key", cookie: { maxAge: 6000000 }, resave: true, saveUninitialized: true}));
 
+//database setup
 db.connect((err) => {
   if (err) {
     console.log("Connection Error" + err);
